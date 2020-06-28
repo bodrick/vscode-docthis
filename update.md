@@ -6,6 +6,7 @@
 `git merge upstream/master`
 
 # publish vscode marketplace
+`npm i`
 `npm install -g vsce`
 
 `vsce publish`

@@ -1,7 +1,7 @@
 import * as vs from "vscode";
 import * as ts from "typescript";
 import * as utils from "./utilities";
-import * as dayjs from "dayjs";
+import * as dateformat from "dateformat";
 
 import { LanguageServiceHost } from "./languageServiceHost";
 import { Range } from "vscode";
@@ -216,8 +216,8 @@ export class Documenter implements vs.Disposable {
 
     private _emitDate(sb: utils.SnippetStringBuilder) {
         if (vs.workspace.getConfiguration().get("docthis.includeDateTag", false)) {
-            const dateFormat: string = vs.workspace.getConfiguration().get("docthis.dateTagFormat");
-            const dateToAppend: string = dayjs().format(dateFormat) || "";
+            const dateFormatInput: string = vs.workspace.getConfiguration().get("docthis.dateTagFormat");
+            const dateToAppend: string = dateformat(new Date(), dateFormatInput) || "";
             sb.append("@date " + dateToAppend);
             sb.appendSnippetTabstop();
             sb.appendLine();
@@ -377,10 +377,10 @@ export class Documenter implements vs.Disposable {
     private _emitReturns(sb: utils.SnippetStringBuilder, node: ts.MethodDeclaration | ts.FunctionDeclaration | ts.FunctionExpression | ts.ArrowFunction) {
         if (utils.findNonVoidReturnInCurrentScope(node) || (node.type && node.type.getText() !== "void")) {
             if (vs.workspace.getConfiguration().get("docthis.returnsTag", true)) {
-                sb.append("@returns ");
+                sb.append("@returns {*} ");
             }
             else {
-                sb.append("@return ");
+                sb.append("@return {*} ");
             }
 
             if (includeTypes() && node.type) {
