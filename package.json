@@ -3,7 +3,7 @@
   "displayName": "Document This",
   "description": "Automatically generates detailed JSDoc comments in TypeScript and JavaScript files.",
   "version": "0.8.1",
-  "publisher": "joelday",
+  "publisher": "oouo-diogo-perdigao",
   "icon": "images/icon.png",
   "galleryBanner": {
     "color": "#252627",
@@ -120,10 +120,10 @@
     "typescript": "^2.9.1"
   },
   "bugs": {
-    "url": "https://github.com/joelday/vscode-docthis/issues"
+    "url": "https://github.com/oouo-diogo-perdigao/vscode-docthis/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/joelday/vscode-docthis"
+    "url": "https://github.com/oouo-diogo-perdigao/vscode-docthis"
   }
 }
