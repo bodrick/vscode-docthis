@@ -2,14 +2,70 @@
   "name": "docthis",
   "displayName": "Document This",
   "description": "Automatically generates detailed JSDoc comments in TypeScript and JavaScript files.",
-  "version": "0.8.1",
+  "version": "0.8.2",
   "publisher": "oouo-diogo-perdigao",
   "icon": "images/icon.png",
   "galleryBanner": {
     "color": "#252627",
     "theme": "dark"
-  },
-  "license": "MIT",
+	},
+	"author": {
+    "name": "Joel Day",
+    "url": "https://github.com/joelday"
+	},
+	"contributors": [
+    {
+			"name": "Diogo Passos Perdigão Britto",
+			"email": "diogopbritto@gmail.com",
+      "url": "https://github.com/oouo-diogo-perdigao"
+		},
+    {
+      "name": "TheOpenDevProject",
+      "url": "https://github.com/TheOpenDevProject"
+		},
+		{
+      "name": "Ed Bishop",
+      "url": "https://github.com/mredbishop"
+		},
+		{
+      "name": "Matej Baric",
+      "url": "https://github.com/mbaric1"
+		},
+		{
+      "name": "Michael Probber",
+      "url": "https://github.com/mprobber"
+		},
+		{
+      "name": "Nicolas Ramz",
+      "url": "https://github.com/warpdesign"
+		},
+		{
+      "name": "Waldir Pimenta",
+      "url": "https://github.com/waldyrious"
+		},
+		{
+      "name": "Vassilis Pitsounis",
+      "url": "https://github.com/vapits"
+		},
+		{
+      "name": "Zhang Haocong",
+      "url": "https://github.com/kakera"
+		},
+		{
+      "name": "James Treworgy",
+      "url": "https://github.com/jamietre"
+		},
+		{
+      "name": "Dominik Schreiber",
+      "url": "https://github.com/dominikschreiber"
+		},
+		{
+      "name": "cudandres",
+      "url": "https://github.com/cudandres"
+		},
+
+  ],
+	"license": "MIT",
   "licenseUrl": "LICENSE",
   "engines": {
     "vscode": "^1.22.0"
