@@ -1,5 +1,7 @@
 https://marketplace.visualstudio.com/items?itemName=oouo-diogo-perdigao.docthis
 
+[![Build Status](https://travis-ci.org/oouo-diogo-perdigao/vscode-docthis.svg?branch=master)](https://travis-ci.org/oouo-diogo-perdigao/vscode-docthis) [![Paypal Donations](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GG4X8R7UTV3AN&source=url)
+
 # Document This
 "Document This" is a Visual Studio Code extension that automatically generates detailed JSDoc comments for both TypeScript and JavaScript files.
 
