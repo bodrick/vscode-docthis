@@ -173,7 +173,8 @@
     "vscode:prepublish": "npm run compile",
     "lint": "node ./node_modules/tslint/bin/tslint src/**/*.ts",
     "compile": "npm run lint && tsc -p ./",
-    "postinstall": "node ./node_modules/vscode/bin/install"
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "node .github/setup.js"
   },
   "devDependencies": {
     "@types/mocha": "^5.2.7",
